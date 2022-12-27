@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="navbar">
+        <h1 id="title">Mascotas</h1>
+        <img src="logo.svg" alt="logo" class="logo">
+        <button id="btnNew" class="btnNew primary">Nuevo</button>
+    </section>
+
+    <section id="form__container">
+        <form id="form" class="hidden">
+            <input type="text" placeholder="Nombre" id="name">
+            <input type="text" placeholder="Edad" id="age">
+            <input type="text" placeholder="Raza" id="breed">
+            <input type="text" placeholder="URL Imagen" id="image">
+            <div>
+                <p>Vacunas</p>
+                <label>
+                    <input type="radio" name="vaccines" value="1">
+                    Al día &#x1f197;
+                </label>
+                <label>
+                    <input type="radio" name="vaccines" value="0">
+                    Pendiente &#x1f198;
+                </label>
+            </div>
+            <button type="submit" class="btnNew success">Guardar</button>
+        </form>
+    </section>
+    <select name="" id="filters">
+        <option value="0">Todos</option>
+        <option value="1">Vacunados</option>
+        <option value="2">Pendientes</option>
+    </select>
+    <main id="main__container"></main>
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+</html>
